@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to GameShop - Explore top games, new releases, and exclusive deals."
+    />
+    <title>GameShop | Top Games, New Releases, & Deals</title>
+    <link rel="stylesheet" href="homepage.css" />
+  </head>
+  <body>
+    <!-- Featured Games Carousel -->
+    <section class="carousel">
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/9072343/pexels-photo-9072343.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Utvalt spel 1"
+        />
+        <div class="carousel-caption">
+          <h2>Speltitel 1</h2>
+          <p>Action | Adventure</p>
+          <a href="#" class="button">Läs mer</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://media.istockphoto.com/id/1448737609/photo/over-the-shoulder-angle-of-a-young-female-gamer-winning-in-a-video-game-on-personal-computer.jpg?b=1&s=612x612&w=0&k=20&c=US9YmqmzpRbZz_ya--LHQuEoBXpwfs9fwD_w3frXGZs="
+          alt="Utvalt spel 2"
+        />
+        <div class="carousel-caption">
+          <h2>Speltitel 2</h2>
+          <p>RPG | Fantasy</p>
+          <a href="#" class="button">Läs mer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI-Powered Game Recommendations -->
+    <section class="recommendations">
+      <h2>Rekommenderat för dig</h2>
+      <div class="game-grid">
+        <div class="game-item">
+          <img
+            src="https://media.istockphoto.com/id/1289323170/photo/visual-contents-concept-social-networking-service-streaming-video-communication-network.jpg?b=1&s=612x612&w=0&k=20&c=ILNADZE_Jq2q45ZOR3PIc85XUz-8nZsMpMfAyD7vOdw="
+            alt="Rekommenderat spel 1"
+          />
+          <h3>Speltitel 1</h3>
+          <p>RPG | Fantasy</p>
+          <span class="price">400 kr</span>
+        </div>
+        <div class="game-item">
+          <img
+            src="https://media.istockphoto.com/id/1153003853/photo/african-american-man-in-vr-glasses-watching-360-degree-video-with-virtual-reality-headset.jpg?b=1&s=612x612&w=0&k=20&c=XoCSLJh8hozJwRWDDZZA_pzwXqCfMyEyWMJCiqRNhTc="
+            alt="Rekommenderat spel 2"
+          />
+          <h3>Speltitel 2</h3>
+          <p>Action | Adventure</p>
+          <span class="price">300 kr</span>
+        </div>
+        <!-- Add more games as needed -->
+      </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers">
+      <h2>Specialerbjudanden</h2>
+      <div class="offer-banner">
+        <img
+          src="https://media.istockphoto.com/id/1701652586/photo/ai-chatbot-robot-access.jpg?b=1&s=612x612&w=0&k=20&c=-xUezwoOLL5fD5dLxP44NQ0kUwjd7jTlzYpgJoFu0fc="
+          alt="Special Offer"
+        />
+        <div class="offer-details">
+          <h3>50% rabatt på Game X</h3>
+          <a href="#" class="button">Handla nu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Product Section -->
+    <section class="featured-product">
+      <h2>Produkt sida</h2>
+      <div class="product-banner">
+        <img
+          src="https://images.pexels.com/photos/3945659/pexels-photo-3945659.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Featured Game"
+        />
+        <div class="product-details">
+          <a href="produktsida.html" class="button">Visa produkt</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Chatbot (Placeholder) -->
+    <div class="chatbot">
+      <label for="chat-toggle">
+        <img
+          src="https://media.istockphoto.com/id/1494104649/photo/ai-chatbot-artificial-intelligence-digital-concept.jpg?b=1&s=612x612&w=0&k=20&c=cUerJsSIULTLDjcXXP8asl1Wd9AOTvIcEI4l0IMeC9M="
+          alt="Chat with us"
+          aria-label="Chatbot"
+          id="chatbot-icon"
+        />
+      </label>
+      <input type="checkbox" id="chat-toggle" class="chat-toggle" />
+
+      <div class="chat-container">
+        <div class="chatbox">
+          <div class="message user-message">Hello!</div>
+          <div class="message ai-message">
+            Hi there! How can I help you today?
+          </div>
+        </div>
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type your message..."
+          aria-label="Chat input"
+        />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
