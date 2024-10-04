@@ -1,0 +1,156 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #f5a623;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2.5rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+    color: #f5a623;
+}
+
+.header p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+/* About Tournaments Section */
+.about-tournaments {
+    background-color: #181818;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.LAN {
+    width: 600px;
+}
+
+.winner {
+    width: 600px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.about-tournaments h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #f5a623;
+    margin-bottom: 1rem;
+}
+
+.about-tournaments p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #e0e0e0;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Activities Section */
+.activities {
+    padding: 2rem;
+    background-color: #202020;
+    margin: 2rem 0;
+}
+
+.activities h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: #f5a623;
+}
+
+.activity {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.activity img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info h3 {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    margin-bottom: 0.5rem;
+    color: #f5a623;
+}
+
+.info p {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+button {
+    background-color: #f5a623;
+    color: #222;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d48821;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .activity {
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+}

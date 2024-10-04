@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter - Spelbutik</title>
+    <link rel="stylesheet" href="produktsida.css">
+    <script src="produktsida.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Våra Produkter</h1>
+        
+        <!-- Sorteringsmeny -->
+        <div class="sort-container">
+            <label for="sort">Sortera efter:</label>
+            <select id="sort" onchange="sortProducts()">
+                <option value="name">Namn (A-Ö)</option>
+                <option value="price">Pris (Lågt till Högt)</option>
+            </select>
+        </div>
+        
+        <div id="product-grid" class="product-grid">
+            <div class="product" data-name="Apex" data-price="299" data-original-price="588" data-category="kategori1">
+                <img src="games-images/apex.jpg" alt="Apex">
+                <h3>Apex</h3>
+                <p>Beskrivning av spelet Apex.</p>
+                <p class="price">299 kr</p>
+                <p class="original-price">588 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Baldurs Gate" data-price="199" data-original-price="388" data-category="kategori2">
+                <img src="games-images/baldursgate.jpg" alt="Baldurs Gate">
+                <h3>Baldurs Gate</h3>
+                <p>Beskrivning av spelet Baldurs Gate.</p>
+                <p class="price">199 kr</p>
+                <p class="original-price">388 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="CS2" data-price="399" data-original-price="688" data-category="kategori1">
+                <img src="games-images/cs2.jpg" alt="CS2">
+                <h3>CS2</h3>
+                <p>Beskrivning av spelet CS2.</p>
+                <p class="price">399 kr</p>
+                <p class="original-price">688 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Dota 2" data-price="249" data-original-price="500" data-category="kategori2">
+                <img src="games-images/dota2.jpg" alt="Dota 2">
+                <h3>Dota 2</h3>
+                <p>Beskrivning av spelet Dota 2.</p>
+                <p class="price">249 kr</p>
+                <p class="original-price">500 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="FC25" data-price="329" data-original-price="650" data-category="kategori1">
+                <img src="games-images/fc25.jpg" alt="FC25">
+                <h3>FC25</h3>
+                <p>Beskrivning av spelet FC25.</p>
+                <p class="price">329 kr</p>
+                <p class="original-price">650 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="GTA 5" data-price="299" data-original-price="600" data-category="kategori2">
+                <img src="games-images/gta5.jpg" alt="GTA 5">
+                <h3>GTA 5</h3>
+                <p>Beskrivning av spelet GTA 5.</p>
+                <p class="price">299 kr</p>
+                <p class="original-price">600 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Monster Hunter" data-price="349" data-original-price="700" data-category="kategori1">
+                <img src="games-images/monsterhunter.jpg" alt="Monster Hunter">
+                <h3>Monster Hunter</h3>
+                <p>Beskrivning av spelet Monster Hunter.</p>
+                <p class="price">349 kr</p>
+                <p class="original-price">700 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Once Human" data-price="259" data-original-price="520" data-category="kategori2">
+                <img src="games-images/oncehuman.jpg" alt="Once Human">
+                <h3>Once Human</h3>
+                <p>Beskrivning av spelet Once Human.</p>
+                <p class="price">259 kr</p>
+                <p class="original-price">520 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="PUBG" data-price="279" data-original-price="560" data-category="kategori1">
+                <img src="games-images/pubg.jpg" alt="PUBG">
+                <h3>PUBG</h3>
+                <p>Beskrivning av spelet PUBG.</p>
+                <p class="price">279 kr</p>
+                <p class="original-price">560 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Rust" data-price="219" data-original-price="480" data-category="kategori2">
+                <img src="games-images/rust.jpg" alt="Rust">
+                <h3>Rust</h3>
+                <p>Beskrivning av spelet Rust.</p>
+                <p class="price">219 kr</p>
+                <p class="original-price">480 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Satisfactory" data-price="399" data-original-price="800" data-category="kategori1">
+                <img src="games-images/satisfactory.jpg" alt="Satisfactory">
+                <h3>Satisfactory</h3>
+                <p>Beskrivning av spelet Satisfactory.</p>
+                <p class="price">399 kr</p>
+                <p class="original-price">800 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Stardew Valley" data-price="149" data-original-price="300" data-category="kategori2">
+                <img src="games-images/stardewvalley.jpg" alt="Stardew Valley">
+                <h3>Stardew Valley</h3>
+                <p>Beskrivning av spelet Stardew Valley.</p>
+                <p class="price">149 kr</p>
+                <p class="original-price">300 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="Warframe" data-price="289" data-original-price="590" data-category="kategori1">
+                <img src="games-images/warframe.jpg" alt="Warframe">
+                <h3>Warframe</h3>
+                <p>Beskrivning av spelet Warframe.</p>
+                <p class="price">289 kr</p>
+                <p class="original-price">590 kr</p>
+                <button class="add-to-cart-btn">Lägg till i kundvagn</button>
+            </div>
+            <div class="product" data-name="War Thunder" data-price="189" data-original-price="400" data-category="kategori2">
+                <img src="games-images/warthunder.jpg" alt="War Thunder">
+                <h3>War Thunder</h3>
+                <p>Beskrivning av spelet War Thunder.</p>
+                <p class="price">189 kr</p>
+                <p class="original-price">400 kr</p>
+                <button class="add-to-cart-btn">Lägg till
