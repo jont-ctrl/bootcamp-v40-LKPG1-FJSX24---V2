@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter - Spelbutik</title>
     <link rel="stylesheet" href="produktsida.css">
+    <link rel="stylesheet" href="main.css" />
     <script src="produktsida.js" defer></script>
 </head>
 <body>
+    <!-- Header med bakgrundsbild och centrerad rubrik -->
+    <header>
+        <div class="header-image" role="banner" aria-label="Välkommen till vår webbplats">
+            <h1 class="header-title">Gamer katedralen</h1>
+        </div>
+    </header>
+    <!-- Navigering -->
+    <nav aria-label="Huvudnavigation">
+        <ul class="navigation">
+            <li>
+              <a href="homepage.html" aria-label="Gå till hemsidan">Hemsida</a>
+            </li>
+            <li>
+              <a href="kontakt.html" aria-label="Gå till kontaktsidan"
+                >Kontaktsida</a
+              >
+            </li>
+            <li>
+              <a href="produktsida.html" aria-label="Gå till produktsidan"
+                >Produktsida</a
+              >
+            </li>
+            <li>
+              <a href="aktivitet.html" aria-label="Gå till aktivitetssidan"
+                >Aktivitetssida</a
+              >
+            </li>
+            <li class="cart">
+              <a href="kundvagn.html" aria-label="Gå till varukorgen"
+                ><img src="varukorg.png" alt="Varukorg" />Varukorg</a
+              >
+            </li>
+          </ul>
+    </nav>
     <div class="container">
         <h1>Våra Produkter</h1>
         
@@ -131,4 +166,16 @@
                 <p>Beskrivning av spelet War Thunder.</p>
                 <p class="price">189 kr</p>
                 <p class="original-price">400 kr</p>
-                <button class="add-to-cart-btn">Lägg till
+                <button class="add-to-cart-btn">Lägg till</button>
+            </div>
+                
+<!-- Sidfot -->
+<footer>
+    <address>
+        <p>Kontaktinformation:</p>
+        <p>Telefon: <a href="tel:+46701234567" aria-label="Ring oss">+46 70 123 4567</a></p>
+        <p>Email: <a href="mailto:info@example.com" aria-label="Skicka e-post till oss">info@example.com</a></p>
+        <p>Adress: Exempelvägen 123, 123 45 Exempelstad</p>
+    </address>
+</footer>
+            </body>
